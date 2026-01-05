@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed top-0 left-0 bg-indigo-500 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${
+            className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${
                 isScrolled
                     ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4"
                     : "py-4 md:py-6"
@@ -75,11 +75,7 @@ const Navbar = () => {
                     } h-7 transition-all duration-500`}
                 />
                 <button
-                    className={`px-8 py-2.5 rounded-full ml-4 transition-all duration-500 ${
-                        isScrolled
-                            ? "text-white bg-black"
-                            : "bg-white text-black"
-                    }`}
+                    className={`px-8 py-2.5 rounded-full ml-4 transition-all duration-500 bg-black text-white`}
                 >
                     Login
                 </button>
